@@ -1,0 +1,40 @@
+{
+  "name": "vue-eagle-modal",
+  "version": "0.0.14",
+  "private": false,
+  "author": "eagle-design.ir",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "overlayscrollbars": "^1.5.2",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "keywords": [
+    "vue","modal","lightbox","alert"
+  ],
+  "license": "MIT",
+  "bundleDependencies": false,
+  "main": "src/Plugin.js"
+  
+}
