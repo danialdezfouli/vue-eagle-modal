@@ -1,0 +1,327 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 5s;     
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+@import 
+"rtl",
+"alert",
+"themes/osx",
+"themes/mojave";
+body{
+  font-family: iranyekan, 'Avenir', Helvetica, Arial, sans-serif;
+}
+.modals {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  z-index: 999;
+  user-select: none;
+  transition: opacity .15s !important;
+  line-height: 1.5;
+  * {
+    box-sizing: border-box;
+  }
+  .bg {
+    position: fixed;
+    background: rgba(14,18,19,.6);
+    z-index: 100;
+    min-height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+  textarea.form-control{
+      min-height: 68px;
+      height: 120px;
+  }
+
+  
+  &::after {
+    content: '';
+    // @extend .fs;
+    // background: url('../img/lodaer.svg') center no-repeat;
+    pointer-events: none;
+    display: none;
+  }
+  .has-image {
+    .fi {
+      height: 33px;
+      float: right;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .custom-file {
+      width: auto;
+      margin-right: 40px;
+      float: none;
+      display: block;
+    }
+  }
+
+  &.load::after {
+    display: block;
+  }
+  .flex{
+    display: flex;
+  }
+  .flex1{
+    flex:1;
+  }
+  .vdr {
+    border: none !important;
+    &:not(.resizing) {
+      transition: .5s height;
+    }
+    > div:not(.emodal) {
+      z-index: 999999;
+      background: none;
+      border: none;
+    }
+    .handle-tm, .handle-bm {
+      left: 0;
+      right: 0;
+      margin: 0 10px;
+      height: 15px;
+      width: auto;
+    }
+    .handle-bm {
+      top: unset;
+    }
+    .handle-mr, .handle-ml {
+      top: 0;
+      bottom: 0;
+      margin: 10px 0;
+      height: auto;
+    }
+    .handle-br {
+      bottom: 0;
+      right: 0;
+    }
+    .handle-bl {
+      bottom: 0;
+      left: 0;
+    }
+    .handle-lr {
+      bottom: 0;
+      left: 0;
+    }
+    .handle-tl {
+      top: 0;
+      left: 0;
+    }
+    .handle-tr {
+      top: 0px;
+      right: 0px;
+    }
+  }
+  .select2-container {
+    width: 100% !important;
+  }
+
+}
+
+.emodal {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0px);
+    overflow: hidden;
+    z-index: 10;
+    &.load { 
+      .wrap {}
+    }
+    &.enter {
+      transform: translate3d(0px, 30px, 0px);
+      opacity: 0;
+    }
+
+    &.closing {
+      transform: translate3d(0px, -30px, 0px);
+      opacity: 0;
+    }
+    header {
+      position: relative;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      .title {
+
+      }
+      .btns {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        > div {
+          position: relative;
+          height: 14px;
+          width: 14px;
+          border-radius: 100px;
+          margin-right: 5px;
+          float: right;
+          box-shadow: 0 0 0 1px rgba(#000, .08) inset;
+          background: #eee;
+          background: #28ca41;
+          opacity: .7;
+          cursor: pointer;
+            transition: .1s;
+          &:hover {
+            opacity: 1;
+          }
+          &:nth-child(2) {
+            cursor: default;
+            background: #ffbd2d;
+          }
+          
+          i {
+            transition: .1s;
+            color: #fff;
+            display: inline-block;
+            font-size: 11px;
+            position: absolute;
+            top: 0;
+            right: 1px;
+            opacity: 0;
+          }
+          &:hover i {
+            opacity: 1;
+          }
+          &.btn-close {
+            background: #ff6155;
+            opacity: 1;
+            i {
+              right: 2px;
+              transform: rotate(45deg);
+            }
+            &:hover {
+              background: #ed5249;
+            }
+          }
+        }
+      }
+    }
+    
+    footer.default {
+      // margin-top: 10px;
+      padding: .75rem;
+      display: flex;
+      flex-direction: row-reverse;
+      
+      ._btn{
+        border-radius: 4px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border: 1px solid transparent;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+        outline: none;
+        &:not(:last-child){
+          margin-left: .5rem;
+        }
+        &.save{
+          color: #fff;
+          background-color: #007bff;
+          border-color: #007bff;
+          &:hover{
+            background-color: #0069d9;
+            border-color: #0062cc;
+          }
+        }
+        &.cancel{
+          background: none;
+          &:hover {
+            color: #212529;
+            background-color: #e2e6ea;
+            border-color: #dae0e5;       
+          }
+        }
+      }
+    }
+  .wrap  {
+    position: relative;
+    overflow: auto;
+    padding: 1rem;
+    margin: 1rem .5rem;
+    margin-bottom: 0;
+    height: calc(100% - 149px);
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    transition: 0.2s opacity;
+  }
+  &.load .content {
+    opacity: 0;
+
+  }
+  .inner {
+    position: relative;
+    padding: 1rem 1.5rem 0 1.5rem;
+    .fi {
+      width: 50px;
+      float: left;
+    }
+  }
+
+  .loader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+  
+    .l {
+      height: 30px;
+      width: 30px;
+      opacity: .8;
+    }
+  }
+  &.load .loader{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+  .item-row{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: .25rem 0;
+    .label-text{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 100%;
+      padding-right: 68px;
+      word-break: break-all;
+    }
+    > .label{
+      width: 120px;
+    }
+    > .col-data{
+      flex: 1;
+      select {
+        width: 100%;
+      }
+    }
+  } 
+
+  .custom-control.custom-checkbox {
+    margin-top: 5px;
+  }
+}

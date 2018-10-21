@@ -1,0 +1,1 @@
+[{"name":"el1","type":"text","label":"Label","value":"value1","attr":{"required":true}},{"name":"el2","label":"Textarea","type":"Textarea","value":"","attr":{"required":true}},{"name":"el3","label":"Checkbox","type":"checkbox","value":true},{"name":"el4","label":"Select","type":"select","options":[{"text":"t1","value":"test"},{"text":"t2","value":"t2"}],"value":"t2"}]

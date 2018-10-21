@@ -1,0 +1,19 @@
+.emodal.rtl{
+	direction: rtl;
+	text-align: right;
+	.item-row{
+	}
+	.item-row .label-text{
+    	padding-right: 78px;
+	}
+	footer.default {
+	    flex-direction: row;
+    	justify-content: flex-end;
+		._btn{
+	    	margin: 0;
+		}
+		._btn:not(:last-child){
+		    margin-right: .5rem;
+		}
+	}
+}

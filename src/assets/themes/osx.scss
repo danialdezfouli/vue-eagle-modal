@@ -1,0 +1,17 @@
+.emodal.osx {
+  $r: 8px;
+	border-radius: $r;
+    background: #fff;
+    background: linear-gradient(130deg, #fff, #f2f3f6);
+    box-shadow: 0 25px 60px rgba(64, 72, 90, .2), 0 0 30px rgba(0, 0, 0, .1);
+      color: #2f2c2c;
+    header {
+      border-radius: $r $r 0 0;
+      background: rgba(106, 101, 177, 0.04);
+      border-bottom: 1px solid #f2f6f7;
+      .title {
+
+      }
+      
+    }
+}
