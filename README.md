@@ -61,3 +61,14 @@ npm run serve
 npm run build
 ```
 
+
+> You can use this package in your projects : )
+<br>
+Design and Developed by
+[Eagle Design](https://eagle-design.ir) studio :heart:
+
+`Email` [eagledesign.ir@gmail.com](mailto:eagledesign.ir@gmail.com)
+<br>
+`Phone` [+989169942377](tel:+989169942377)
+<br>
+`Telegram` [Get in touch with me in telegream](https://t.me/eagledesign)
