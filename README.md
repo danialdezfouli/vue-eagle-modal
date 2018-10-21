@@ -64,6 +64,7 @@ npm run build
 
 > You can use this package in your projects : )
 <br>
+
 Design and Developed by
 [Eagle Design](https://eagle-design.ir) studio :heart:
 
