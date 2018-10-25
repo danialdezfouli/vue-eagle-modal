@@ -1,6 +1,9 @@
 # vue-eagle-modal
 
-[Demos and Document](https://eagle-design.ir/vue-eagle-modal)
+[Document](https://eagle-design.ir/vue-eagle-modal)
+[Demos](https://eagle-design.ir/vue-eagle-modal/demo.html)
+[Github](https://github.com/eagle-design/vue-eagle-modal)
+
 <br>
 [Design and Developed by eagle design](https://eagle-design.ir)
 

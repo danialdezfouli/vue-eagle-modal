@@ -3,6 +3,7 @@
 		<transition name='fade' class='modal-list'>
 	        <div class="modals" v-if='openItems.length > 0' ref='modals'>
 	            <div class="bg" @dblclick='closeAll'></div>
+	            
 	            <div v-for='item in openItems' :key="item.id">
 					<Modal v-if='item.data.type == "modal"' :item="item"></Modal>
 					<Alert v-else-if='item.data.type == "alert"' :item="item"></Alert>
@@ -45,10 +46,13 @@
 				let item = this.add(data);
 				item.open();
 			},
-			add(data){
+			add(data,is_modal=false){
 				if (!this.$parent) {
 			    	this.$mount()
 			        document.body.appendChild(this.$el)
+		      	}
+		      	if(is_modal){
+		      		this.items.push(data);
 		      	}
 
 				let item = new Item(data);

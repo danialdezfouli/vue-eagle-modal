@@ -105,6 +105,7 @@
 			this.textSubmit = data.rtl ? 'ثبت' : 'Save'
 			this.textCancel = data.rtl ? 'لغو' : 'Cancel'
 
+			
 			item.parent = this;
 			this.$on('save',(e) => { // button
 				this.$refs.form.$refs.submitBtn.click();

@@ -2,11 +2,12 @@
 	Copyright © 2018 Vue Eagle Modal, All rights reserved. eagle-design.ir
 */
 
-import Modals from './components/List';
+import M from './components/List';
+import Modal from './components/EagleModal';
 import ParentFile from './components/types/Parent';
 
-Modals.install = (Vue, options) => {
-  Vue.prototype.$modals = new (Vue.extend(Modals))({ 
+M.install = (Vue, options) => {
+  Vue.prototype.$modals = new (Vue.extend(M))({ 
     propsData: options 
   })
   Vue.modals = Vue.prototype.$modals
@@ -16,5 +17,6 @@ Modals.install = (Vue, options) => {
 // import Vue from 'vue';
 // Vue.use(Modals);
 
-export const EagleModal = Modals;
+export const EagleModal = M;
 export const Parent = ParentFile;
+export const eModal = Modal;
