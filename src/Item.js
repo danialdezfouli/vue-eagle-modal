@@ -21,12 +21,12 @@ function filterItem(i) {
 	}
 }
 export default function (data = {}) {
-	data = {
+	data = Object.assign({
 		loadTitle: data.rtl ? 'در حال بارگذاری ...' :'Loading ...',
 		theme: 'osx',
-		type: 'modal',
-		...data
-	}
+		type: 'modal'
+	},data)
+	
 	const callbacks = data.callbacks || {};
 	if(data.callbacks) delete data.callbacks;
 	data.use = data.use || {}

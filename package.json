@@ -1,6 +1,6 @@
 {
   "name": "vue-eagle-modal",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "private": false,
   "author": "eagle-design.ir",
   "scripts": {
@@ -33,6 +33,14 @@
   "keywords": [
     "vue","modal","lightbox","alert"
   ],
+  "bugs": {
+    "url": "https://github.com/eagle-design/vue-eagle-modal/issues"
+  },
+  "homepage": "https://eagle-design.ir/vue-eagle-modal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eagle-design/vue-eagle-modal.git"
+  },
   "license": "MIT",
   "bundleDependencies": false,
   "main": "src/Plugin.js"
