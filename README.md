@@ -3,8 +3,6 @@
 [Document](https://eagle-design.ir/vue-eagle-modal)
 <br>
 [Demos](https://eagle-design.ir/vue-eagle-modal/demo.html)
-<br>
-[Design and Developed by eagle design](https://eagle-design.ir)
 
 ## Project setup
 ```
